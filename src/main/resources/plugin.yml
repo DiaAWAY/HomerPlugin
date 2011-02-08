@@ -1,0 +1,21 @@
+name: HomerPlugin
+main: com.bukkit.diaaway.homer.HomerPlugin
+version: 0.1
+author: DiaAWAY
+website: http://github.com/diaaway
+
+description: >
+             Home plugin for Bukkit.
+             This plugin enables users to create a home position to teleport to.
+
+commands:
+  home:
+    description: teleports you to your home. Use /sethome to set your home location.
+    usage: |
+           /<command>
+           Example: /home - teleports you home.
+  sethome:
+    description: sets your home location. Use /home to teleport home.
+    usage: |
+           /<command>
+           Example: /sethome - sets your home location.

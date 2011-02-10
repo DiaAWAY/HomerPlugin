@@ -1,4 +1,4 @@
-package com.diaaway.homer;
+package no.diaaway.homer;
 
 import java.io.File;
 import java.util.HashMap;

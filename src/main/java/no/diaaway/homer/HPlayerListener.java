@@ -1,4 +1,4 @@
-package com.diaaway.homer;
+package no.diaaway.homer;
 
 import org.bukkit.Location;
 import org.bukkit.command.CommandSender;

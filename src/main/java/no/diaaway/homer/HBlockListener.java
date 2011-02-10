@@ -1,4 +1,4 @@
-package com.diaaway.homer;
+package no.diaaway.homer;
 
 import com.nijikokun.bukkit.iProperty;
 import java.util.Iterator;

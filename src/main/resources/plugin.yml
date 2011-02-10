@@ -1,5 +1,5 @@
 name: HomerPlugin
-main: com.bukkit.diaaway.homer.HomerPlugin
+main: no.diaaway.homer.HomerPlugin
 version: 0.1
 author: DiaAWAY
 website: http://github.com/diaaway

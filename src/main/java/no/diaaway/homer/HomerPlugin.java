@@ -37,13 +37,6 @@ public class HomerPlugin extends JavaPlugin {
 //    private boolean teleport = true; // wether teleport is enabled or not
     private double homeSize = 3; // initial homeSize of the home, for block destruction/placement purposes
 
-    public HomerPlugin(PluginLoader pluginLoader, Server instance, PluginDescriptionFile desc, File folder, File plugin, ClassLoader cLoader) {
-        super(pluginLoader, instance, desc, folder, plugin, cLoader);
-        // TODO: Place any custom initialisation code here
-
-        // NOTE: Event registration should be done in onEnable not here as all events are unregistered when a plugin is disabled
-    }
-
     public void onDisable() {
         // TODO: Place any custom disable code here
 

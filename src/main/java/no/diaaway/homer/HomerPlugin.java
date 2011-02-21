@@ -38,13 +38,6 @@ public class HomerPlugin extends JavaPlugin {
 //    private boolean teleport = true; // wether teleport is enabled or not
     private double homeSize = 3; // initial homeSize of the home, for block destruction/placement purposes
 
-    public HomerPlugin(PluginLoader pluginLoader, Server instance, PluginDescriptionFile desc, File folder, File plugin, ClassLoader cLoader) {
-        super(pluginLoader, instance, desc, folder, plugin, cLoader);
-        // TODO: Place any custom initialisation code here
-
-        // NOTE: Event registration should be done in onEnable not here as all events are unregistered when a plugin is disabled
-    }
-
     public void onDisable() {
         // TODO: Place any custom disable code here
 
@@ -63,7 +56,8 @@ public class HomerPlugin extends JavaPlugin {
         pm.registerEvent(Event.Type.PLAYER_QUIT, playerListener, Priority.Normal, this);
         pm.registerEvent(Event.Type.PLAYER_COMMAND, playerListener, Priority.Normal, this);
         pm.registerEvent(Event.Type.PLAYER_MOVE, playerListener, Priority.Normal, this);
-        pm.registerEvent(Event.Type.ENTITY_DAMAGEDBY_ENTITY, entityListener, Priority.Low, this);
+        pm.registerEvent(Event.Type.ENTITY_TARGET, entityListener, Priority.Low, this);
+        pm.registerEvent(Event.Type.ENTITY_DAMAGED, entityListener, Priority.Low, this);
         pm.registerEvent(Event.Type.BLOCK_PHYSICS, blockListener, Priority.Normal, this);
         pm.registerEvent(Event.Type.BLOCK_CANBUILD, blockListener, Priority.Low, this);
         pm.registerEvent(Event.Type.BLOCK_PLACED, blockListener, Priority.Low, this);

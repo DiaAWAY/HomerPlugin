@@ -1,9 +1,7 @@
 package no.diaaway.homer;
 
-import com.nijikokun.bukkit.iProperty;
 import org.bukkit.block.BlockDamageLevel;
 import org.bukkit.entity.Player;
-import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockDamageEvent;
 import org.bukkit.event.block.BlockListener;
 import org.bukkit.event.block.BlockPlaceEvent;
